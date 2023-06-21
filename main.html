@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <div id="container">
+    <h3 id="h">Please click on the identical tiles to verify that you are not a robot.</h3>
+    <div id="image-container">
+      <img class="img1" src="" alt="Image 1" onclick="selectImage(this)">
+      <img class="img2" src="" alt="Image 2" onclick="selectImage(this)">
+      <img class="img3" src="" alt="Image 3" onclick="selectImage(this)">
+      <img class="img4" src="" alt="Image 4" onclick="selectImage(this)">
+      <img class="img5" src="" alt="Image 5" onclick="selectImage(this)">
+      <img class="img6" src="" alt="Image 6" onclick="selectImage(this)">
+    </div>
+    <button id="reset" onclick="resetSelection()" style="display: none;">Reset</button>
+    <button id="verify" onclick="verifySelection()" style="display: none;">Verify</button>
+    <p id="para"></p>
+  </div>
 
+  <script src="script.js"></script>
 </body>
 
 </html>
